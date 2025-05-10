@@ -5,7 +5,7 @@ class HttpService {
         return axios.get("http://localhost:8080/students");
     }
 
-    async createStudent(body){
+    async createStudent(body) {
         return axios.post("http://localhost:8080/student", body)
     }
 }

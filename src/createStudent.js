@@ -1,5 +1,5 @@
 import HttpService from "./HttpService";
-import { useState } from "react";
+import {useState} from "react";
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Button} from "@mui/material";
 
 function CreateStudent(props) {
@@ -8,7 +8,7 @@ function CreateStudent(props) {
     const [dob, setDob] = useState("");
 
     function addStudent() {
-        const newStudent = { firstName, lastName, dob };
+        const newStudent = {firstName, lastName, dob};
         HttpService.createStudent(newStudent).then(() => {
             setFirstName("");
             setLastName("");

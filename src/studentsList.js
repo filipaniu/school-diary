@@ -1,6 +1,6 @@
 import HttpService from "./HttpService";
 import {useEffect, useState} from "react";
-import {Table, TableCell, TableHead, TableRow, TableContainer,TableBody} from "@mui/material";
+import {Table, TableCell, TableHead, TableRow, TableContainer, TableBody} from "@mui/material";
 
 function StudentList(props) {
     const [data, setData] = useState([]);
