@@ -36,8 +36,6 @@ function StudentList(props) {
             </TableBody>
         </Table>
     </TableContainer>
-
-
 }
 
 export default StudentList;
