@@ -1,6 +1,6 @@
 import './App.css';
 import CreateStudent from "./createStudent";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import StudentsList from "./studentsList";
 
 function App() {
