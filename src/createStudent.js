@@ -5,7 +5,7 @@ import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextFi
 function CreateStudent(props) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
-    const [dob, setDob] = useState("");
+    const [dob, setDob] = useState("a");
 
     function addStudent() {
         const newStudent = {firstName, lastName, dob};
@@ -45,6 +45,7 @@ function CreateStudent(props) {
                             <TextField
                                 label="Date of Birth"
                                 type="date"
+                                InputLabelProps={{ shrink: true }}
                                 variant="outlined"
                                 size="small"
                                 onChange={(x) => setDob(x.target.value)}
